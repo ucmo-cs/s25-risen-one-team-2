@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="senior-project-template">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/backend/.serverless/senior-project-template.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
