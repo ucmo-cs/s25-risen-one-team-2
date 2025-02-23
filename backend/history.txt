@@ -1,0 +1,10 @@
+aws --version
+C:\Users\delan\SeniorProject\s25-risen-one-team-2\backend
+cd C:\Users\delan\SeniorProject\s25-risen-one-team-2\backend
+npx serverless deploy
+notepad serverless.yml
+serverless deploy
+Get-ExecutionPolicy -List
+serverless -v
+history
+doskey /history > history.txt
