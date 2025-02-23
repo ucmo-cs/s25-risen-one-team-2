@@ -3,19 +3,19 @@ import { Router } from '@angular/router';
 import {provideNativeDateAdapter} from '@angular/material/core';
 
 interface previousRequest {
-  value: string;
-  viewValue: string;
-}
+    value: string;
+    viewValue: string;
+  }
 
 @Component({
-  selector: 'app-form',
-  providers: [provideNativeDateAdapter()],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
-})
+    selector: 'app-teams',
+    providers: [provideNativeDateAdapter()],
+    templateUrl: './teams.component.html',
+    styleUrl: './teams.component.css'
+  })
 
 
-export class HomeComponent {
+export class TeamsComponent {
   constructor (private router: Router ) {}
   /* Sign In navigation Function */
   ngOnInit(){}
