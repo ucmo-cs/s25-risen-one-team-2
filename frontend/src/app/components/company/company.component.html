@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="body">
+    <div class="page">
     <!--<h1>Welcome to the Company Page</h1> -->
     <div class="about">
         <h2 class="about-title">About us</h2>
         <div class="about-description">
         <p class="about-text">Risen One Consulting (WOSB) is an innovative technology solutions consulting firm
-            focusing on cloud modernization efforts. Our goal is to achieve focus, strategic,
-            and safe modernization efforts using the latest technology and expertise. Our
-            Midwest values and leading expertise in both private and public sectors makes us
-            an execellent choice for your business.
+            focusing on cloud modernization efforts. We provide professional consulting to private, 
+            federal and nonprofit clients focusing on data center migration, Human Centered Design,
+            Agile Development, delivery to cloud via Infrastructure as Code, DevSecOps and Continuous Integration 
+            Continuous Deployment.
         </p>
         </div>
     </div>
     <br>
     <div class="leader">
         <h2 class="leader-title">Our Leaders</h2>
-        <div name="employees">
-            <app-employee></app-employee>
+        <div class="employee-container">
+            <app-employee *ngFor="let item of items" [employee] = "item"></app-employee>
         </div>
     </div>
     <br>
+    <h2 class="mission-title">Mission Statement</h2>
     <div class="mission">
-        <h2 class="mission-title">Mission Statement</h2>
+        <p>
+            We connect people to modern solutions. Our goal is to achieve focus, strategic, and safe
+            modernization efforts using the latest technology and expertise.
+        </p>
     </div>
+</div>
 </html>

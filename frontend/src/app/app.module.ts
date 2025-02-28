@@ -63,7 +63,7 @@ import { LoginComponent } from './login/login.component';
       HomeComponent,
       SidenavComponent,
       LoginComponent,
-      AppComponent
+      AppComponent,
     ],
     exports: [],
     bootstrap: [AppComponent],

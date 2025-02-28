@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { CommonModule } from "@angular/common";
 
@@ -12,5 +12,7 @@ import { CommonModule } from "@angular/common";
 })      
 
 export class EmployeeComponent {
-  title = "employees";
+  @Input() employee: any;
+  
+ 
 }
