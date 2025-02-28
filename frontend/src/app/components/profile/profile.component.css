@@ -1,20 +1,20 @@
-h1 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 35px;
+
+.content{
+  background-image: url("/assets/bg.jpg") !important;
+  background-position: center;
 }
 
 .container {
-  max-width: 900px;
   margin: auto;
+  padding: 0 100px 10px 100px;
   border-radius: 15px;
 }
 
 .form-control {
   height: 30px;
-  border-radius: 10px; /* Rounded corners */
-  padding: 12px; /* More padding for a modern look */
-  border: 1.5px solid #ccc; /* Slightly darker border */
+  border-radius: 10px; 
+  padding: 12px; 
+  border: 1.5px solid #ccc; 
   transition: all 0.3s ease-in-out;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 .btn-primary {
-  background: #d84315;
+  background: #637dff;
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
