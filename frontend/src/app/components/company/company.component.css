@@ -1,3 +1,13 @@
+.page{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 30px;
+    width:fit-content;
+    
+}
+.page::-webkit-scrollbar{
+    display: none;
+}
 h1 {
     font-weight: bold;
     text-align: center;
@@ -23,10 +33,29 @@ div {
 .about-description {
     display:inline-block;
     width: auto;
-    color: #ffffff;
-    background-color:  #000000;
-    border-radius: 10px 10px 10px 10px;
+    color: black;
+    background-color: rgb(247, 155, 8);
+    opacity: .85;
+    border-radius: 5px 5px 5px 5px;
     padding: 20px;
     margin:10px;
-    box-shadow: 5px 5px 10px #2e2e2e;
+    box-shadow: 2px 2px 5px #4f4e4e;
+    font-weight: bold;
+}
+.employee-container{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.mission{
+    display:inline-block;
+    color: black;
+    background-color: rgb(247, 155, 8);
+    opacity: .85;
+    border-radius: 0px 20px 0px 20px;
+    padding: 20px;
+    margin:10px;
+    box-shadow: 2px 2px 5px #4f4e4e;
+    font-weight: bold;
 }
