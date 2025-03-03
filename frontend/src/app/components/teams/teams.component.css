@@ -17,10 +17,11 @@ h1 {
     gap: 20px;
     text-align: center;
     border-style: ridge;
-    margin-top: auto;
+    margin: auto;
+    /*margin-top: auto;
     margin-bottom: auto;
     margin-right: 150px;
-    margin-left: 150px;
+    margin-left: 150px;*/
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 50px;

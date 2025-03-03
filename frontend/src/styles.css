@@ -6,11 +6,8 @@
 html,
 body {
   all: unset;
-    background-image: linear-gradient(
-      to right bottom,
-      hsla(48, 100%, 49%, 0.8),
-      hsla(34, 100%, 46%, 0.8)
-    );
+    background-image: url("/assets/mountain-bg.jpeg");
+    background-position: center;
 }
 
 p {

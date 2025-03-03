@@ -34,9 +34,9 @@ div {
     display:inline-block;
     width: auto;
     color: black;
-    background-color: rgb(172, 171, 171);
+    background-color: rgb(247, 155, 8);
     opacity: .85;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
     padding: 20px;
     margin:10px;
     box-shadow: 2px 2px 5px #4f4e4e;
@@ -53,7 +53,7 @@ div {
     color: black;
     background-color: rgb(247, 155, 8);
     opacity: .85;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 20px 0px 20px;
     padding: 20px;
     margin:10px;
     box-shadow: 2px 2px 5px #4f4e4e;
