@@ -50,12 +50,8 @@ div {
 }
 .mission{
     display:inline-block;
-    color: black;
-    background-color: rgb(247, 155, 8);
-    opacity: .85;
-    border-radius: 0px 20px 0px 20px;
+    color: white;
     padding: 20px;
     margin:10px;
-    box-shadow: 2px 2px 5px #4f4e4e;
     font-weight: bold;
 }
