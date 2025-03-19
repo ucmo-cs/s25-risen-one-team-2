@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" class="body">
-    <div class="announcements">
-        <h1>Announcements</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="box full-width">
+                <h3>Announcements</h3>
+                <section>
+                    <div>
+                      <button mat-flat-button color="primary" class="btn btn-primary">View Announcements</button>
+        <!--<a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>-->
+                    </div>
+                  </section>
+            </div>
+
+            <div class="box">
+                <h3>Upcoming Events</h3>
+                <div class="scrolling-events">
+                    <p>Quarterly Business Strategy Meeting - May 19th, 2025</p>
+                    <br>
+                    <p>Client Engagement Workshop - June 2nd, 2025</p>
+                    <br>
+                    <p>Annual Leadership Retreat - July 8th, 2025</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Birthdays/Anniversaries</h3>
+            </div>
+
+            <div class="boxCalendar full-width">
+                <h3>Calendar</h3>
+                <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id" 
+                    style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="box full-width">
+                <h3>Current Job Openings</h3>
+            </div>
+        </div>
     </div>
-    <div class="events">
-        <h1>Upcoming Events</h1>
-    </div>
-    <div class="calender">
-        <h1>Calender</h1>
-    </div>
-    <div class="celebrations">
-        <h1>Birthdays/Anniversaries</h1>
-    </div>
-    <div calss="jobs">
-        <h1>Current Job Openings</h1>
-    </div>
+</body>
+
 </html>
