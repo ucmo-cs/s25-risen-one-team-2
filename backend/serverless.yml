@@ -1,15 +1,15 @@
 # "org" ensures this Service is used with the correct Serverless Framework Access Key.
 <<<<<<< HEAD
-org: beccarubak
-=======
+
 org: gmw18610
->>>>>>> fd02fe87a46ac5bf92fbd147bad54123b48f4671
 service: senior-project-template
 
 provider:
   name: aws
   runtime: nodejs20.x
   region: us-east-1
+  environment:
+    USERS_TABLE: users
 
 plugins:
   - serverless-offline
