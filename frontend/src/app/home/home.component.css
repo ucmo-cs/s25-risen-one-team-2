@@ -42,24 +42,40 @@ body {
 .full-width {
     grid-column: span 2;
     text-align: center;
+    border-radius: 5px 5px 5px 5px;
 }
 .box {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: none;
     background: white;
-    text-align: center;
+    text-align: left;
+    align-items: center;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .btn{
-    background: #637dff;
+    background: rgb(104, 157, 190);;
+    color: rgb(0, 0, 0);
     border: none;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 12px 20px;
     border-radius: 8px;
     transition: 0.3s ease-in-out;
   }
-
-  
+.announcementBox{
+    padding: 20px;
+    border: none;
+    background: white;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 .btn-primary:hover {
-    background: #f2693f;
+    background: rgb(122, 170, 200);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+iframe{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
