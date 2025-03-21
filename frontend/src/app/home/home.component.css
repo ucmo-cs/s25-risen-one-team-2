@@ -1,10 +1,81 @@
+
+.page{
+    overflow-y: auto;
+    height: 85vh;
+    padding-bottom: 30px;
+    
+}
+.page::-webkit-scrollbar{
+    display: none;
+}
+
 .heading{
     text-align: center;
 
 }
-h1{
+h3{
     text-align: center;
     width: auto;
-    font-size: 50px;
-    
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.announcements {
+    position: relative;
+    text-align: center;
+}
+.calendar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 25px 0px 10px 0px;
+}
+.full-width {
+    grid-column: span 2;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+}
+.box {
+    padding: 20px;
+    border: none;
+    background: white;
+    text-align: left;
+    align-items: center;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+    background: rgb(104, 157, 190);;
+    color: rgb(0, 0, 0);
+    border: none;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+  }
+.announcementBox{
+    padding: 20px;
+    border: none;
+    background: white;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+.btn-primary:hover {
+    background: rgb(122, 170, 200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+iframe{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

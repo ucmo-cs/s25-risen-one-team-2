@@ -2,11 +2,15 @@
     overflow-y: auto;
     height: 100vh;
     padding-bottom: 30px;
-    width:fit-content;
+    width: 100%;
+    
     
 }
 .page::-webkit-scrollbar{
     display: none;
+}
+html, body{
+    overflow: hidden;
 }
 h1 {
     font-weight: bold;
@@ -29,24 +33,53 @@ div {
     width: 75%;
     height: auto;
     margin:auto;
+    
 }
-.about-description {
-    display:inline-block;
-    width: auto;
+.about {
+    display:flex;
+    height: fit-content;
+    width: fit-content;
     color: black;
-    background-color: rgb(247, 155, 8);
-    opacity: .85;
-    border-radius: 5px 5px 5px 5px;
-    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
     margin:10px;
-    box-shadow: 2px 2px 5px #4f4e4e;
-    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
 }
-.employee-container{
+
+.about-image{
     width: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    height: auto;
+    margin-bottom: 0px;
+    align-items: right;
+}
+
+.employee-container{
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
     gap: 10px;
+}
+.leader{
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    margin:auto;
+}
+.leader-title{
+    text-align: left;
+    font-size: 65px;
+}
+.employee-container::-webkit-scrollbar{
+    display: none;
+}
+app-employee{
+    width: 250px;
+    flex: 0 0 auto;
 }
 .mission{
     display:inline-block;

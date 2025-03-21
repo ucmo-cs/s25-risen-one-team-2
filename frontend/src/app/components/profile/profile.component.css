@@ -8,6 +8,7 @@
   margin: auto;
   padding: 0 100px 10px 100px;
   border-radius: 15px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .form-control {
@@ -16,6 +17,7 @@
   padding: 12px; 
   border: 1.5px solid #ccc; 
   transition: all 0.3s ease-in-out;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .form-control:focus {
