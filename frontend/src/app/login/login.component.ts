@@ -79,6 +79,7 @@ export class LoginComponent {
         next: (success) => {
           if (success) {
             // Navigate to home component if login is successful
+            console.log('Login successful');
             this.router.navigate(['/home']);
           } else {
             // Handle login failure
