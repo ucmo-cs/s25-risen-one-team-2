@@ -1,0 +1,28 @@
+.card{
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 0px; 
+    background-color: transparent !important;
+}
+.employee-photo{
+    width: 100%;
+    height:auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.employee-photo:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.hover-content{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.1s ease-in-out, max-height 0.1s ease-in-out;
+}
+.name{
+    font-weight: bold;
+}

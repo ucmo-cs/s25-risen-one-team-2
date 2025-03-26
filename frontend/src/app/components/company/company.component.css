@@ -1,3 +1,17 @@
+.page{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 30px;
+    width: 100%;
+    
+    
+}
+.page::-webkit-scrollbar{
+    display: none;
+}
+html, body{
+    overflow: hidden;
+}
 h1 {
     font-weight: bold;
     text-align: center;
@@ -19,14 +33,59 @@ div {
     width: 75%;
     height: auto;
     margin:auto;
+    
 }
-.about-description {
-    display:inline-block;
+.about {
+    display:flex;
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    margin:10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.about-image{
     width: auto;
-    color: #ffffff;
-    background-color:  #000000;
-    border-radius: 10px 10px 10px 10px;
+    height: auto;
+    margin-bottom: 0px;
+    align-items: right;
+}
+
+.employee-container{
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    gap: 10px;
+}
+.leader{
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    margin:auto;
+}
+.leader-title{
+    text-align: left;
+    font-size: 65px;
+}
+.employee-container::-webkit-scrollbar{
+    display: none;
+}
+app-employee{
+    width: 250px;
+    flex: 0 0 auto;
+}
+.mission{
+    display:inline-block;
+    color: black;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     margin:10px;
-    box-shadow: 5px 5px 10px #2e2e2e;
+    box-shadow: 2px 2px 5px #4f4e4e;
 }

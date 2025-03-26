@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { EmployeeComponent } from '../employee/employee.component';
 import { CommonModule } from '@angular/common';
@@ -20,10 +19,44 @@ interface previousRequest {
 
 
 export class CompanyComponent {
-  constructor (private router: Router ) {}
-  /* Sign In navigation Function */
-  ngOnInit(){}
-  signIn() {
-    this.router.navigate(['/login']);
-  }
+  //Needs to be an array filled with information from DynamoDB
+  //for testing purposes only
+  items = [
+    {
+    title: 'Gary White',
+    description: 'President', 
+    image:'/assets/boyPic.jpg',
+    info: 'More information to be displayed soon.'
+    },
+    {
+    title: 'Sarah Johnson', 
+    description: 'CEO', 
+    image:'/assets/woman.jpg',
+    info: 'More information to be displayed soon.'
+    },
+    {
+    title: 'Bill Murray', 
+    description: 'Vice President', 
+    image:'/assets/boyPic.jpg',
+    info: 'More information to be displayed soon.'
+    },
+    {
+    title: 'Gregory Jensen', 
+    description: 'HR Manager', 
+    image:'/assets/boyPic.jpg',
+    info: 'More information to be displayed soon.'
+    },
+    {
+    title: 'Sheri Briggs', 
+    description: 'Manager', 
+    image:'/assets/woman.jpg',
+    info: 'More information to be displayed soon.'
+    },
+    {
+    title: 'Dana French', 
+    description: 'Manager', 
+    image:'/assets/woman.jpg',
+    info: 'More information to be displayed soon.'
+    }
+  ];
 }
