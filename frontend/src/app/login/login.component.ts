@@ -57,7 +57,6 @@ interface previousRequest {
 
 
 @Component({
-  
   selector: 'app-login',
   providers: [provideNativeDateAdapter()],
   templateUrl: './login.component.html',
@@ -65,8 +64,7 @@ interface previousRequest {
   template: `
   <input type="text" [(ngModel)]="username" placeholder="Username">
   <input type="password" [(ngModel)]="password" placeholder="Password">
-  <!-- <button (click)="login()">Login</button> -->
-  <button type="submit">Login</button>
+  <button (click)="login()">Login</button>
 `
 })
 export class LoginComponent {
@@ -75,16 +73,13 @@ export class LoginComponent {
 
   constructor(private authService: AuthService, private router: Router) { }
 
-  login(event: Event) {
-    event.preventDefault();
-
+  login() {
     this.authService.login(this.username, this.password)
       .subscribe({
         next: (success) => {
           if (success) {
             // Navigate to home component if login is successful
             this.router.navigate(['/home']);
-            console.log("login successful");
           } else {
             // Handle login failure
             console.error('Login failed');
@@ -97,6 +92,8 @@ export class LoginComponent {
       });
   }
 }
+
+
 
 
 
