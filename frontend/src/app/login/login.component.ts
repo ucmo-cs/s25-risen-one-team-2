@@ -70,6 +70,7 @@ interface previousRequest {
 export class LoginComponent {
   username: string = ''; // Initialize with an empty string
   password: string = ''; // Initialize with an empty string
+  errorMessage: string = '';
 
   constructor(private authService: AuthService, private router: Router) { }
 
@@ -89,6 +90,7 @@ export class LoginComponent {
         error: (error) => {
           // Handle login error
           console.error('Login error:', error);
+          this.errorMessage = error;
         }
       });
   }

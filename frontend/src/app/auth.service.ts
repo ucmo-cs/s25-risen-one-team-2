@@ -13,9 +13,18 @@ export class AuthService {
   constructor(private http: HttpClient,private router: Router) { }
 
   login(username: string, password: string): Observable<boolean> {
-    return this,this.http.post<{message: string}>(`${this.apiUrl}/login`,{username,password})
+    console.log('Making request to:', `${this.apiUrl}/login`);
+
+    return this.http.post<{message: string}>(`${this.apiUrl}/login`,{username,password},
+      {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    )
     .pipe(
       map(response => {
+        console.log('Response:', response);
         if(response.message === 'Login successful'){
           localStorage.setItem('username', username);
           return true;
