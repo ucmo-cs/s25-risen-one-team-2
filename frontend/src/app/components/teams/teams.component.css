@@ -1,6 +1,20 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: fixed; 
+}
 
+.container {
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    scrollbar-width: none;
+}
 
-
+.container::-webkit-scrollbar {
+    display: none;
+}
 
 h1 {
     font-weight: bold;
@@ -10,11 +24,9 @@ h1 {
     background-size: 20px;
     
 }
-
-.container {
-     display: grid;
-     gap: 50px;
-    padding-top: 50px;
+html::-webkit-scrollbar {
+    width: 10px;
+    display: none;
 }
 
 .container2 {

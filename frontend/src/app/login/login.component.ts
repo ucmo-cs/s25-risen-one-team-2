@@ -70,6 +70,7 @@ interface previousRequest {
 export class LoginComponent {
   username: string = ''; // Initialize with an empty string
   password: string = ''; // Initialize with an empty string
+  errorMessage: string = '';
 
   constructor(private authService: AuthService, private router: Router) { }
 
@@ -79,6 +80,7 @@ export class LoginComponent {
         next: (success) => {
           if (success) {
             // Navigate to home component if login is successful
+            console.log('Login successful');
             this.router.navigate(['/home']);
           } else {
             // Handle login failure
@@ -88,6 +90,7 @@ export class LoginComponent {
         error: (error) => {
           // Handle login error
           console.error('Login error:', error);
+          this.errorMessage = error;
         }
       });
   }
