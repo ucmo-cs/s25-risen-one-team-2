@@ -6,7 +6,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { LayoutModule } from '@angular/cdk/layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material Form Controls
@@ -55,6 +55,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app.routes';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
     declarations: [
@@ -64,6 +65,7 @@ import { LoginComponent } from './login/login.component';
       SidenavComponent,
       LoginComponent,
       AppComponent,
+      ProfileComponent,//this is so we can use ngModule to pull from dynamodb
     ],
     exports: [],
     bootstrap: [AppComponent],
