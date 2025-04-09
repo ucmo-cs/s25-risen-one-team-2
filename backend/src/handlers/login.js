@@ -1,13 +1,13 @@
 'use strict';
 
 const AWS = require('aws-sdk');
-const dynamoDb = new AWS.DynamoDB.DocumentClient();
+const dynamoDb = new AWS.DynamoDB.DocumentClient({ region: 'us-east-1' });
 
 module.exports.handler = async (event) => {
   const requestBody = JSON.parse(event.body);
 
   const params = {
-    TableName: process.env.USERS_TABLE,
+    TableName: 'users',
     Key: {
       username: requestBody.username
     }
@@ -19,6 +19,11 @@ module.exports.handler = async (event) => {
     if (!data.Item || data.Item.password !== requestBody.password) {
       return {
         statusCode: 401,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type, Authorization"
+        },
         body: JSON.stringify({ message: 'Invalid username or password' })
       };
     }
