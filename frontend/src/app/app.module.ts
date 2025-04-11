@@ -57,6 +57,8 @@ import { AppRoutingModule } from './app.routes';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
+
+
 @NgModule({
     declarations: [
       AppHeaderComponent,
