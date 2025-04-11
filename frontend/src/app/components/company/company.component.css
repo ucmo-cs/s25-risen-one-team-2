@@ -83,9 +83,8 @@ app-employee{
 }
 .mission{
     display:inline-block;
-    color: black;
-    background-color: rgb(255, 255, 255);
+    color: white;
     padding: 20px;
     margin:10px;
-    box-shadow: 2px 2px 5px #4f4e4e;
+    font-weight: bold;
 }

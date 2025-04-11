@@ -1,7 +1,11 @@
 # "org" ensures this Service is used with the correct Serverless Framework Access Key.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 org: gmw18610
+=======
+org: beccarubak
+>>>>>>> b2c568a24fd5c6885b9bbe411245e48dfbdad75d
 service: senior-project-template
 
 provider:

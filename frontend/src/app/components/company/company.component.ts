@@ -34,7 +34,7 @@ export class CompanyComponent {
     image:'/assets/woman.jpg',
     info: 'More information to be displayed soon.'
     },
-    {
+    { 
     title: 'Bill Murray', 
     description: 'Vice President', 
     image:'/assets/boyPic.jpg',

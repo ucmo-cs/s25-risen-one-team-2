@@ -14,7 +14,7 @@ font-weight: bold;
 .teams-container {
     display: grid;
     height: 700px;
-    width: 1200px;
+    width: 1400px;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, auto); /* 2 rows */
     gap: 50px; /* Space between blocks */
