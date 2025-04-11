@@ -9,7 +9,7 @@ import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },//change this to /login once login works
   { path: 'home', component: HomeComponent },
   { path: 'company', component: CompanyComponent },
   { path: 'profile', component: ProfileComponent },

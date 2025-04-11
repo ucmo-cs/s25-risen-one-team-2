@@ -20,7 +20,8 @@ export class ProfileComponent implements OnInit {
   phone: string = '';
   email: string = '';
   birthday: string = '';
-  city: string = '';
+  location: string = '';
+  loading: boolean = true;
 
   constructor(private router: Router, private http: HttpClient) {}
 
@@ -38,10 +39,15 @@ export class ProfileComponent implements OnInit {
           this.phone = response.user.phone;
           this.email = response.user.email;
           this.birthday = response.user.birthday;
-          this.city = response.user.city;
+          this.location = response.user.location;
         } else {
           console.log('User not found');
         }
+        this.loading = false;//might be able to take this out
+      },
+      (error) => {
+        console.error('Error fetching data:', error); //show errors in console log
+        this.loading = false; // loading set to false if not working
       });
   }
 
@@ -53,7 +59,7 @@ export class ProfileComponent implements OnInit {
       phone: this.phone,
       email: this.email,
       birthday: this.birthday,
-      city: this.city,
+      location: this.location,
     };
 
     this.http.post<any>(apiUrl, userData).subscribe(
