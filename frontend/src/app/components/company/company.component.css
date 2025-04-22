@@ -128,7 +128,7 @@ app-employee{
 .about-image {
     flex: 1;
     width: auto;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0;
 }
 
@@ -143,12 +143,12 @@ app-employee{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 70px;
-    padding: 0 20px;
+    gap: 60px;
+    padding: 0 10px;
 }
 
 .about-text-container {
-    flex: 1;
+    flex: 0.8;
     width: auto;
 }
 

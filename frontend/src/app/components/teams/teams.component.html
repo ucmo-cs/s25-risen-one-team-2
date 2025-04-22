@@ -11,7 +11,7 @@
           *ngFor="let team of teams"
           (click)="toggleDetails(team)"
         >
-          <div class="clickme">Click to Expand/Shrink</div>
+          <div class="clickme">Click to Expand/Collapse</div>
           <h2 class="team-name">{{ team.name }}</h2>
           
           <div class="employees">
@@ -23,8 +23,7 @@
           <!-- Show detailed view when clicked -->
           <div *ngIf="selectedTeam === team" class="details">
             <h3 class="detailstitle">Team Details</h3>
-            <!-- <p><strong>Leader:</strong> {{ team.leader }}</p> -->
-            <p><strong></strong> {{ team.description }}</p>
+            <p>{{ team.description }}</p>
           </div>
         </div>
       </div>
