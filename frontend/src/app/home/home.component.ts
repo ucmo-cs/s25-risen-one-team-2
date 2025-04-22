@@ -6,11 +6,6 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 
 
-interface previousRequest {
-  value: string;
-  viewValue: string;
-}
-
 @Component({
   selector: 'app-form',
   providers: [provideNativeDateAdapter()],
@@ -18,15 +13,7 @@ interface previousRequest {
   styleUrl: './home.component.css'
 })
 
-
-export class HomeComponent {
-  constructor (private router: Router ) {}
-  /* Sign In navigation Function */
-  ngOnInit(){}
-  signIn() {
-    this.router.navigate(['/login']);
-  }
-}
+export class HomeComponent {}
 
 @Component({
   selector: 'button-overview-example',

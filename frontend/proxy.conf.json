@@ -1,0 +1,11 @@
+{
+  "": {
+    "target": "https://y9zr6k5yol.execute-api.us-east-1.amazonaws.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "logLevel": "debug"
+  }
+}
