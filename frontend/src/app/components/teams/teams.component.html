@@ -3,69 +3,31 @@
     <title>Team Blocks</title>
     <link rel="stylesheet" href="teams.component.css">
 
-<body class="body1">
-
-
-    <div class="container">
-        <h1>Our Teams</h1>
-        
-        <div class="container2">
-        <div class="team-box">
-            <li class="team2">Team Alpha</li>
-            <ul class="employee">
-                <li>John Doe</li>
-                <li>Jane Smith</li>
-                <li>Bob Johnson</li>
-                <li>Alice Brown</li>
+    <body>
+     <div class="teams-container">
+        <div 
+          class="team-block" 
+          [class.expanded]="selectedTeam === team"
+          *ngFor="let team of teams"
+          (click)="toggleDetails(team)"
+        >
+          <div class="clickme">Click to Expand/Shrink</div>
+          <h2 class="team-name">{{ team.name }}</h2>
+          
+          <div class="employees">
+            <ul>
+              <li *ngFor="let employee of team.employees">{{ employee.name }}</li>
             </ul>
+          </div>
+      
+          <!-- Show detailed view when clicked -->
+          <div *ngIf="selectedTeam === team" class="details">
+            <h3 class="detailstitle">Team Details</h3>
+            <!-- <p><strong>Leader:</strong> {{ team.leader }}</p> -->
+            <p><strong></strong> {{ team.description }}</p>
+          </div>
         </div>
-        <div class="team-box">
-            <li class="team2">Team Beta</li>
-            <ul class="employee">
-                <li>Michael White</li>
-                <li>Sarah Davis</li>
-                <li>David Wilson</li>
-                <li>Emily Clark</li>
-            </ul>
-        </div>
-        <div class="team-box">
-            <li class="team2">Team Charlie</li>
-            <ul class="employee">
-                <li>Chris Martinez</li>
-                <li>Jessica Lee</li>
-                <li>Ryan Thomas</li>
-                <li>Olivia Hall</li>
-            </ul>
-        </div>
-        <div class="team-box">
-            <li class="team2">Team Delta</li>
-            <ul class="employee">
-                <li>Daniel Young</li>
-                <li>Laura Allen</li>
-                <li>Kevin Scott</li>
-                <li>Emma Harris</li>
-            </ul>
-        </div>
-        <div class="team-box">
-            <li class="team2">Team Echo</li>
-            <ul class="employee">
-                <li>Brandon King</li>
-                <li>Stephanie Wright</li>
-                <li>Patrick Lopez</li>
-                <li>Hannah Green</li>
-            </ul>
-        </div>
-        <div class="team-box">
-            <li class="team2">Team Foxtrot</li>
-            <ul class="employee">
-                <li>Eric Adams</li>
-                <li>Rebecca Nelson</li>
-                <li>Steven Baker</li>
-                <li>Nicole Carter</li>
-            </ul>  
-        </div>
-        </div>
-    </div>
-</body>
+      </div>
+    </body>
 </html>
 
