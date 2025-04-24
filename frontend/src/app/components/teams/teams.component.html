@@ -4,14 +4,13 @@
     <link rel="stylesheet" href="teams.component.css">
 
     <body>
-     <div class="teams-container">
-        <div 
-          class="team-block" 
+      <div class="teams-container">
+        <div
+          class="team-block"
           [class.expanded]="selectedTeam === team"
           *ngFor="let team of teams"
           (click)="toggleDetails(team)"
         >
-          <div class="clickme">Click to Expand/Collapse</div>
           <h2 class="team-name">{{ team.name }}</h2>
           
           <div class="employees">
@@ -19,7 +18,9 @@
               <li *ngFor="let employee of team.employees">{{ employee.name }}</li>
             </ul>
           </div>
-      
+          
+          <div class="arrow-indicator"></div>
+          
           <!-- Show detailed view when clicked -->
           <div *ngIf="selectedTeam === team" class="details">
             <h3 class="detailstitle">Team Details</h3>
