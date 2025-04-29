@@ -2,34 +2,45 @@
 <html lang="en" class="body">
     <div class="page">
     <!--<h1>Welcome to the Company Page</h1> -->
-    <div class="about">
-        <div class="about-description">
-        <div><h2 class="about-title">About us</h2></div>
-        <p class="about-text">Risen One Consulting (WOSB) is an innovative technology solutions consulting firm
-            focusing on cloud modernization efforts. We provide professional consulting to private, 
-            federal and nonprofit clients focusing on data center migration, Human Centered Design,
-            Agile Development, delivery to cloud via Infrastructure as Code, DevSecOps and Continuous Integration 
-            Continuous Deployment.
-        </p>
-        </div>
-        <div class="about-image">
-            <img src="assets/header-about.jpg.webp" alt="Risen One Consulting">
-        </div>
-    </div>
-    <br>
-    <div class="leader">
-        <h2 class="leader-title">Leadership</h2>
-        <div class="employee-container">
-            <app-employee *ngFor="let item of items" [employee] = "item"></app-employee>
+    <div class="about-container">
+        <div class="about-content">
+            <h2 class="about-title">About us</h2>
+            <div class="about-divider"></div>
+            <div class="about-flex-container">
+                <div class="about-text-container">
+                    <p class="about-text">Risen One Consulting (WOSB) is an innovative technology solutions consulting firm
+                        focusing on cloud modernization efforts. We provide professional consulting to private, 
+                        federal and nonprofit clients focusing on data center migration, Human Centered Design,
+                        Agile Development, delivery to cloud via Infrastructure as Code, DevSecOps and Continuous Integration 
+                        Continuous Deployment.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/header-about.jpg.webp" alt="Risen One Consulting">
+                </div>
+            </div>
         </div>
     </div>
     <br>
-    <h2 class="mission-title">Our Mission</h2>
-    <div class="mission">
-        <p>
-            We connect people to modern solutions. Our goal is to achieve focus, strategic, and safe
-            modernization efforts using the latest technology and expertise.
-        </p>
+    <div class="leader-container">
+        <div class="leader-content">
+            <h2 class="leader-title">Leadership</h2>
+            <div class="leader-divider"></div>
+            <div class="employee-container">
+                <app-employee *ngFor="let item of items" [employee] = "item"></app-employee>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="mission-container">
+        <div class="mission-content">
+            <h2 class="mission-title">Our Mission</h2>
+            <div class="mission-divider"></div>
+            <p class="mission-text">
+                We connect people to modern solutions. Our goal is to achieve focus, strategic, and safe
+                modernization efforts using the latest technology and expertise.
+            </p>
+        </div>
     </div>
 </div>
 </html>

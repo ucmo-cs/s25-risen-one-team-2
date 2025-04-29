@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, map, catchError, throwError } from 'rxjs';
+import { Observable, map, catchError, throwError, of } from 'rxjs';
 import { Router } from '@angular/router';
 
 /*
@@ -9,38 +9,38 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   //API URL for the Lambda function
-  private apiUrl = 'https://y9zr6k5yol.execute-api.us-east-1.amazonaws.com/dev';
+  private apiUrl = '';
 
-  constructor(private http: HttpClient,private router: Router) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
-  login(username: string, password: string): Observable<boolean> {
-    console.log('Making request to:', `${this.apiUrl}/login`);
-
-    return this.http.post<{message: string}>(`${this.apiUrl}/login`,{username,password},
+  login(username: string, password: string): Observable<any> {
+    console.log('Making request to:', `${this.apiUrl}/login`, {username: username, password: password});
+    
+    const headers = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+    };
+  
+    return this.http.post<any>(
+      `${this.apiUrl}/login`, 
+      { username: username, password: password },
       {
-        headers: {
-          'Content-Type': 'application/json'
-        }
+        headers: headers
       }
     )
     .pipe(
       map(response => {
         console.log('Response:', response);
-        if(response.message === 'Login successful'){
-          localStorage.setItem('username', username);
-          return true;
-        }
-        return false;
+        localStorage.setItem('username', username);
+        return true;
       }),
       catchError(error => {
-        if(error.status === 401){
-          return throwError(() => 'Invalid username or password');
-        }
+        console.error('Login error:', error);
         return throwError(() => 'An error occurred during login');
       })
-    
-    )
-  }
+    ); 
+ }
 
   logout() {
     localStorage.removeItem('username');

@@ -50,26 +50,16 @@ import { merge } from 'rxjs'
 import { AuthService } from '../auth.service';
 
 
-interface previousRequest {
-  value: string;
-  viewValue: string;
-}
-
-
 @Component({
   selector: 'app-login',
   providers: [provideNativeDateAdapter()],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css',
-  template: `
-  <input type="text" [(ngModel)]="username" placeholder="Username">
-  <input type="password" [(ngModel)]="password" placeholder="Password">
-  <button (click)="login()">Login</button>
-`
+  styleUrl: './login.component.css'
 })
+
 export class LoginComponent {
-  username: string = ''; // Initialize with an empty string
-  password: string = ''; // Initialize with an empty string
+  username: string = '';
+  password: string = ''; 
   errorMessage: string = '';
 
   constructor(private authService: AuthService, private router: Router) { }

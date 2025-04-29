@@ -3,8 +3,6 @@
     height: 100vh;
     padding-bottom: 30px;
     width: 100%;
-    
-    
 }
 .page::-webkit-scrollbar{
     display: none;
@@ -56,27 +54,6 @@ div {
     align-items: right;
 }
 
-.employee-container{
-    display: flex;
-    white-space: nowrap;
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
-    gap: 10px;
-}
-.leader{
-    width: 100%;
-    padding: 20px;
-    overflow: hidden;
-    margin:auto;
-}
-.leader-title{
-    text-align: left;
-    font-size: 65px;
-}
-.employee-container::-webkit-scrollbar{
-    display: none;
-}
 app-employee{
     width: 250px;
     flex: 0 0 auto;
@@ -87,4 +64,159 @@ app-employee{
     padding: 20px;
     margin:10px;
     font-weight: bold;
+}
+.mission-container {
+    width: 100%;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.mission-content, .about-content, .leader-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(64, 81, 90, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mission-title, .about-title, .leader-title {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.mission-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #f8b500;
+    margin: 0 auto 25px;
+}
+
+.mission-text, .about-text {
+    color: white;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+}
+
+.mission-text {
+    text-align: center;
+    font-size: 22px;
+}
+
+.about-container {
+    width: 100%;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.about-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #f8b500;
+    margin: 0 auto 25px;
+}
+
+.about-image {
+    flex: 1;
+    width: auto;
+    max-width: 600px;
+    margin: 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 0 10px;
+}
+
+.about-text-container {
+    flex: 0.8;
+    width: auto;
+}
+
+.about-text {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+    text-align: left;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Add responsive layout */
+@media (max-width: 768px) {
+    .about-flex-container {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .about-image {
+        max-width: 100%;
+    }
+}
+
+.leader-container {
+    width: 100%;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.leader-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #f8b500;
+    margin: 0 auto 25px;
+}
+
+.employee-container {
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    gap: 25px;
+    padding: 10px 0;
+}
+
+.employee-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.employee-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.employee-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
