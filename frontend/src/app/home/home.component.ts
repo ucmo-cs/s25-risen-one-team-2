@@ -4,7 +4,7 @@ import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
-
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-form',
