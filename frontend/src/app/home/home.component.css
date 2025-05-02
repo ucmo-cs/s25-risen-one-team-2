@@ -49,6 +49,10 @@ html, body {
     height: 3px;
     background-color: #f8b500;
   }
+  .col-md-6 ul{
+    list-style-type: none;
+
+  }
   
   h3 {
     text-align: center;
@@ -78,7 +82,7 @@ html, body {
     padding: 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(64, 81, 90, 0.7);
-    text-align: left;
+    text-align: center;
     align-items: center;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -134,13 +138,13 @@ html, body {
   .calendar iframe {
     border: none;
     width: 100%;
-    height: 500px; /* Adjust height as needed */
+    height: 500px;
     border-radius: 4px;
   }
   .boxCalendar{
     font-size: 50px;;
   }
-  /* Button styling with team color scheme */
+  
   .btn {
     background: #f8b500;
     color: rgb(0, 0, 0);
@@ -159,7 +163,6 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  /* Background video container */
   .relative {
     position: relative;
     width: 100%;
@@ -175,8 +178,7 @@ html, body {
     top: 0;
     left: 0;
   }
-  
-  /* Blue info box */
+
   .blue-box {
     position: absolute;
     top: 30%;

@@ -69,10 +69,10 @@ export class AuthService {
       
       return new Observable<boolean>((observer) => {
         if (loginSuccess) {
-          observer.next(true); // Notify subscribers that login was successful
-          observer.complete(); // Complete the observable
+          observer.next(true); 
+          observer.complete(); 
         } else {
-          observer.error('Login failed'); // Notify subscribers that login failed
+          observer.error('Login failed'); 
         }
       });
     }
